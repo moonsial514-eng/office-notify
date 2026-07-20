@@ -78,6 +78,7 @@ async def handler(ws):
                     "bold":        d.get("bold", False),
                     "italic":      d.get("italic", False),
                     "effect":      d.get("effect","none"),
+                    "pos":         d.get("pos","current"),
                 }
                 dead = set()
                 for emp in employees:
